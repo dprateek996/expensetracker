@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Starter monorepo with client and server workspaces.",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "build:all": "npm run build --workspaces",
+    "lint:all": "npm run lint --workspaces",
+    "format:all": "npm run format --workspaces",
+    "dev:client": "npm run dev --workspace client",
+    "dev:server": "npm run dev --workspace server"
+  }
+}
